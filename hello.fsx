@@ -15,3 +15,10 @@ let countUp() =
         printf "%d " count 
     printfn ""
 countUp()
+
+let getLetters() =
+  for c in 'a' .. 'z' do
+    printf "%c " c
+  printfn ""
+getLetters()
+
