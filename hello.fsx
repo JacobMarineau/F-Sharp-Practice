@@ -22,3 +22,10 @@ let getLetters() =
   printfn ""
 getLetters()
 
+let man = "dude man"
+
+let activeDude(dude) =
+    if dude = "dude man" then printfn "yeah %s" dude
+    else printfn "%s" dude
+
+activeDude(man)
