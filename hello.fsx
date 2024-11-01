@@ -20,6 +20,7 @@ let getLetters() =
   for c in 'a' .. 'z' do
     printf "%c " c
   printfn ""
+
 getLetters()
 
 let man = "dude man"
@@ -29,3 +30,19 @@ let activeDude(dude) =
     else printfn "%s" dude
 
 activeDude(man)
+
+let letters = ['a' .. 'z']
+
+let getLettersFromList() =
+  letters
+  |> List.iter (printf "%c ")
+  printfn ""
+
+let lettersReverseFromList() =
+  letters
+  |> List.rev
+  |> List.iter (printf "%c ")
+  printfn ""
+
+getLettersFromList()
+lettersReverseFromList()
